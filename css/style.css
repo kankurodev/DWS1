@@ -1,0 +1,1271 @@
+/*Site Defaults*/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font: 1.6rem/1.25 "Program OT", arial, sans-serif;
+    color: #888;
+    background: #fff;
+}
+
+h1 {
+    font-size: 2.6rem;
+    color: #666;
+    text-transform: uppercase;
+}
+
+h1 strong {
+    font-size: 3.6rem;
+    color: #111;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.0rem;
+    color: #444;
+}
+
+h3 {
+    font-size: 1.6rem;
+    color: #111;
+    font-weight: bold;
+}
+
+.wrapper, #products, .breadcrumbs, main > h1, form.contact {
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main > h1 {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+/*HEADER*/
+
+
+header {
+    background: url("../images/banner.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header .wrapper {
+    padding: 10rem 0 10rem 5.5rem;
+}
+
+nav {
+    background-color: #333;
+    text-align:center;
+    border-top: 5px solid #C0392B;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 1.5rem;
+    vertical-align: top;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    padding: 1.5rem 1rem;
+    font-weight: bold;
+    background: rgba(51, 51, 51, 1);
+    font-size: 1.2rem;
+}
+
+nav a[href="#cart"], nav a[href="#cart"]:hover {
+    background-color: #C0392B;
+    color: #fff;
+    position: relative;
+    top: 1rem;
+    padding: 0.5rem 2.5rem 2.5rem 2.3rem;
+    font-size: 1.4rem;
+}
+
+
+nav a[href="#cart"]::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1rem;
+    background-color: #C0392B;
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    padding: 0 1rem;
+}
+
+nav a[href="#cart"]::after {
+    content: "";
+    color: #fff;
+    float: left;
+    padding: 0.7rem 0.7rem 0.7rem 1.2rem;
+    background: url("/images/cart.png") no-repeat;
+}
+
+nav a:hover {
+    color: #ddd;
+    background: rgba(17, 17, 17, 1);
+}
+
+
+/*Breadcrumbs*/
+
+
+.breadcrumbs li {
+    float: left;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    content: "/";
+    padding: 0 1rem;
+}
+
+.breadcrumbs a {
+    color: #999;
+    opacity: 0.5;
+    
+}
+
+.breadcrumbs a:hover {
+    opacity: 1;
+}
+
+
+/*FOOTER*/
+
+
+footer {
+    position: relative;
+    padding-bottom: 10rem;
+    background-color: #111;
+    display: block;
+    background-size: cover;
+    clear: both;
+}
+
+footer .wrapper {
+    padding-right: 10rem;
+}
+
+footer .wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer section, footer ul:not(:last-child) {
+    width: calc(100% / 4 - 2rem);
+    float: left;
+    vertical-align: top;
+    padding: 10rem 0 10rem 5rem;
+    margin-right: 1.4rem;
+}
+
+footer section {
+    margin-left: 1rem;
+}
+
+footer section:not(:nth-child(4)) {
+    margin-right: 1rem;
+}
+
+footer .wrapper > ul:first-child a {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+footer .wrapper > ul:first-child li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+
+/*Footer Links*/
+
+#footHelp li {
+    margin-bottom: 1rem;
+}
+
+#footHelp a {
+    padding: 0.2rem;
+    color: #888;
+    opacity: 0.5;
+}
+
+#footHelp a:hover {
+    opacity: 1;
+}
+
+#footHelp h2 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+#footNews li {
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+#footNews a {
+    padding: 0.2rem;
+    color: #888;
+}
+
+#footNews li:hover {
+    opacity: 1;
+}
+
+#footNews h2 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+#footNews li:first-child {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    opacity: 1;
+    
+}
+
+#footNews li:first-child a {
+    color: #fff;
+}
+
+/*Social Media*/
+
+#footSocial {
+    float: right;
+}
+
+#footSocial a {
+    display: block;
+    text-indent: -9999px;
+    height: 3.1rem;
+    width: 3.1rem;
+    opacity: 0.5;
+}
+
+#footSocial a:hover {
+    opacity: 1;
+}
+
+#footSocial h2 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: right;
+    padding: 0 3rem 0.5rem 0;
+}
+
+#footSocial li {
+    display: inline-block;
+}
+
+#footSocial a[href*='facebook'] {
+    background: url("/images/facebook.png") no-repeat;
+}
+
+#footSocial a[href*='twitter'] {
+    background: url("/images/twitter.png") no-repeat;
+}
+
+#footSocial a[href*='youtube'] {
+    background: url("/images/youtube.png") no-repeat;
+}
+
+#footSocial a[href*='google+'] {
+    background: url("/images/google.png") no-repeat;
+}
+
+#footSocial a[href*='instagram'] {
+    background: url("/images/instagram.png") no-repeat;
+}
+
+
+/*Copyright*/
+
+.copyright {
+    float: left;
+    margin-left: 2rem;
+}
+
+footer ul:nth-of-type(2) li {
+    float: right;
+    opacity: 0.5;
+}
+
+footer ul:nth-of-type(2) li:hover {
+    opacity: 1;
+}
+
+footer ul:nth-of-type(2) a {
+    color: #666;
+    padding: 0.2rem;
+}
+
+footer ul:nth-of-type(2) li:not(:first-child) {
+    margin-right: 2.5rem;
+}
+
+footer .copyright::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: calc(100% * 2.57);
+    border: 1px solid #888;
+    opacity: 0.2;
+    margin: 2.4rem 0;
+}
+
+footer ul:nth-of-type(2) a::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: calc(100% /1.42);
+    opacity: 0.2;
+    margin: 3rem 0;
+}
+
+
+/*INDEX*/
+/*HEADINGS*/
+
+
+#products h1 strong {
+    display: block;
+}
+
+#benefits h1 {
+    text-align: center;
+}
+
+#benefits h1 strong {
+    display:block;
+}
+
+
+/*Shop Categories*/
+
+
+#shopCategories {
+    background: #111;
+    padding: 5rem 0;
+}
+
+#shopCategories::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#shopCategories li {
+    width: calc(100% / 3 - 1rem);
+    float: left;
+    text-align: center;
+    padding: 5rem 0;
+    background-size: cover;
+}
+
+#shopCategories li:not(:nth-of-type(3)) {
+    margin-right: 1.5rem;
+}
+
+#shopCategories li:nth-child(1) {
+    background-image: url("../images/bikes.jpg");
+}
+
+#shopCategories li:nth-child(2) {
+    background-image: url("../images/speedometer.jpg");
+}
+
+#shopCategories li:nth-child(3) {
+    background-image: url("../images/backpack.jpg");
+}
+
+#shopCategories h1 {
+    background: rgba(17, 17, 17, 0.7);
+    padding: 1rem;
+    color: #fff;
+    margin-bottom: 5rem;
+}
+
+#shopCategories a {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    background-color: #C0392B;
+    color: #fff;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+
+/*Featured Products - Index */
+
+
+#products {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-right: 0;
+}
+#products h1 {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+#products article {
+    width: calc(100% / 4 - 2rem);
+    float: left;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    border: 2px solid transparent;
+    position: relative;
+}
+
+#products article:nth-of-type(5n) {
+    clear:both;
+}
+
+#products::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.price {
+    font-weight: bold;
+    color: #111;
+    margin-top: 1rem;
+}
+
+article p:nth-of-type(4) del {
+    font-weight: normal;
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 0.5rem;
+}
+
+#products article:hover {
+    border: 2px solid #888;
+}
+
+#products article:hover .thumbnail::after {
+    content: "ADD TO CART";
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 1rem 1rem 5rem;
+    font-weight: bold;
+    background: rgba(17, 17, 17, 0.7) url("/images/cart.png") no-repeat;
+    background-position: 2rem 1rem;
+    display: block;
+}
+
+#products img{
+    width: 100%;
+}
+
+.thumbnail {
+    height: 18rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+#products h3, #shopSale h3 {
+    margin-bottom: 1rem;
+}
+
+
+/*Ratings*/
+
+p[data-rating] {
+    text-indent: -9999px;
+    background: url("/images/ratings.png") no-repeat;
+    background-size: auto 22rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+p[data-rating="1"] {
+    background-position: 0 20%;
+}
+
+p[data-rating="2"] {
+    background-position: 0 40%;
+}
+
+p[data-rating="3"] {
+    background-position: 0 60%;
+}
+
+p[data-rating="4"] {
+    background-position: 0 80%;
+}
+
+p[data-rating="5"] {
+    background-position: 0 100%;
+}
+
+
+/*Member Benefits*/
+#benefits {
+    background-size: cover;
+    position: relative;
+    display: block;
+    background-color: #111;
+    z-index: 1;
+}
+
+#benefits h1 {
+ color: #888;   
+}
+
+#benefits h2 {
+    color: #fff;
+    padding-bottom: 1rem;
+    padding-top: 25rem;
+    text-transform: uppercase;
+}
+
+#benefits h1 strong {
+    color: #fff;
+}
+
+#benefits::after {
+    content: "";
+    background: url("/images/gears.jpg") no-repeat;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    z-index: -1;
+}
+
+#benefits .wrapper {
+    padding: 10rem 2.25rem 10rem 2.25rem;
+}
+
+#benefits li {
+    width: calc(100% / 3 - 2.5rem);
+    float: left;
+    text-align: center;
+    vertical-align: top;
+    padding-bottom: 2rem
+}
+
+#benefits li:not(:nth-of-type(3)) {
+    margin-right: 2rem;
+}
+
+#benefits li h2:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: 25rem;
+    background-position: center top;
+    margin: 7rem 9rem;
+    border: 3px solid #888;
+}
+
+#benefits li:nth-child(1) {
+    background: url(/images/truck.png) no-repeat;
+    background-position: 50% 30%;
+    background-size: 50%;
+}
+
+#benefits li:nth-child(2) {
+    background: url("/images/wrench.png") no-repeat;
+    background-position: 50% 30%;
+    background-size: 50%;
+}
+
+#benefits li:nth-child(3) {
+    background: url("/images/envelope.png") no-repeat;
+    background-position: 53% 25%;
+    background-size: 50%;
+}
+
+#benefits li h2:nth-child(1) {
+    margin-left: 1rem;
+    position: relative;
+}
+
+#benefits .wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#benefits form p {
+    margin-top: 2rem;
+    display: inline-block;
+}
+
+#benefits input {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+#benefits button {
+    padding: 0.5rem 2rem;
+    background-color: #C0392B;
+    color: #fff;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+
+/*BLOGS*/
+
+#blogs {
+    width: calc(75% - 10rem);
+    float: right;
+}
+
+#blogs h1 {
+    text-align: left;
+    padding-left: 1rem;
+    margin-bottom: 5rem;
+}
+
+#blogs article {
+    width: calc(100% - 2rem);
+    position: relative;
+    margin-bottom: 5rem;
+    overflow: hidden;
+    padding: 1rem 1rem 1rem 50%;
+}
+
+#blogs article:not(:last-of-type) {
+    border-bottom: 1.5px solid rgba(17, 17, 17, 0.2);
+    padding-bottom: 5rem;
+}
+
+a[href="#readMore"] {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: #C0392B;
+    color: #fff;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+}
+
+#blogs ul li {
+    display: inline-block;
+}
+
+#blogs li button {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-bottom: 5rem;
+    background-color: #C0392B;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#blogs ul li:not(:first-child) {
+    margin-left: 1rem;
+}
+
+.blogImg {
+    height: 29.2rem;
+    margin-bottom: 1.5rem;
+    width: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 1.5rem;
+}
+
+.blogImg img {
+    width: 100%;
+}
+
+#blogs dl {
+    margin: 1.5rem 0;
+}
+
+#blogs dl dd {
+    position: relative;
+    margin-left: 11rem;
+    color: #444;
+}
+
+#blogs dl dt {
+    position: absolute
+}
+
+#blogs dl dt::after {
+    content: ":";
+}
+
+.hideBlog {
+    display: none;
+}
+
+
+/*Blogs Sidebar*/
+
+
+#blogs + aside {
+    width: 25%;
+    padding: 5.5rem 1rem 1rem 1rem;
+    margin-top: 5rem;
+    float: left;
+}
+
+#blogs + aside h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+#blogs + aside form {
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+#blogs + aside input {
+    width: 60%;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    border: 2px solid #ddd;
+}
+
+#blogs + aside button[type="submit"] {
+    padding: 0.75rem 2rem;
+    background-color: #C0392B;
+    color: #fff;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%
+}
+
+#blogs + aside  li a {
+    padding: 0.2rem;
+    color: #999;
+    opacity: 0.5;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#blogs + aside li a:hover {
+    opacity: 1;
+}
+
+#blogs + aside li:not(:last-of-type)::after {
+    content: "";
+    display: block;
+    width: 90%;
+    border: 1px solid #888;
+    opacity: 0.2;
+    margin: 1rem 0 1rem 0;
+}
+
+#blogs + aside article h2 {
+    padding-bottom: 1rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+#blogs + aside article a:not([href="#featuredMore"]), #blogs h2 a {
+    color: #999;
+    opacity: 0.5;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#blogs + aside article a:not([href="#featuredMore"]):hover, #blogs h2 a:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+a[href="#featuredMore"] {
+    width: 45%;
+    display: block;
+    padding: 1rem 1.5rem;
+    background-color: #C0392B;
+    color: #fff;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+/*CONTACT*/
+
+#contact {
+    margin-left: 1rem;
+}
+main h1 + p:only-of-type:not([href*="shop"]) {
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+form.contact p:not(:last-child) {
+    display: inline-block
+}
+
+form.contact input, form.contact textarea {
+    display: block;
+}
+
+form.contact input {
+    resize: horizontal;
+    height: 3rem;
+    width: 22.7rem;
+    margin-bottom: 2rem;
+}
+
+form.contact input, form.contact textarea {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+form.contact input:not([name="phone"]) {
+    margin-right: 3rem;
+}
+
+form.contact textarea {
+    height: 10rem;
+    width: 75rem;
+    resize: both;
+    margin-bottom: 2rem;
+}
+
+form.contact button {
+    padding: 0.5rem 2rem;
+    background-color: #C0392B;
+    color: #fff;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.feedback {
+    color: #c0392b;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+
+/*EVENTS*/
+
+
+#events {
+    margin-top: 5rem;
+    width: 100%;
+    float: left;
+}
+
+#events h1 {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+#events h2 {
+    width: 30%;
+    color: #999;
+    opacity: 0.5;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#events h2:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.date {
+    color: #666;
+    text-transform: uppercase;
+    border-bottom: 1.5px solid #ddd;
+}
+
+.date em {
+    font-size: 3.6rem;
+    color: #111;
+    font-weight: bold;
+}
+
+.date, #events dl, #events dt, #events dd  {
+    display: inline-block;
+}
+
+#events dl {
+    margin-left: 1rem;
+}
+
+#events dt:not(:first-of-type) {
+    margin-left: 3rem;
+}
+
+#events dd:last-of-type::before {
+    content: "(";
+}
+
+#events dd:last-of-type::after {
+    content: ")";
+}
+
+#events h2 {
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+#events article {
+    position: relative;
+}
+
+#events h2 + p {
+    position: absolute;
+    top: 7rem;
+}
+
+#events a[href*="more"] {
+    position: absolute;
+    top: 12rem;
+    padding: 1rem 2rem;
+    background-color: #C0392B;
+    color: #fff;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+#events ul {
+    text-align: center;
+}
+
+#events ul li {
+    display: inline-block;
+    margin-top: 5rem;
+}
+
+#events li button {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-bottom: 5rem;
+    background-color: #C0392B;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#events ul li:not(:first-child) {
+    margin-left: 1rem;
+}
+
+/*
+    This after pseudo class is only added to take up the space an image would if the JSON data had one.
+
+    I decided to do this to match the layout of my design better.
+*/
+#events h2::after {
+    content: "";
+    display: block;
+    height: 20rem;
+    width: 35rem;
+    margin-bottom: 5rem;
+}
+
+#events h2 + p, #events a[href*="more"]{
+    margin-top: 1.8%;
+    margin-left: 30%;
+}
+
+
+/*SHOP*/
+
+
+#shopSale .thumbnail {
+    height: 15rem;
+    overflow: hidden;
+    width: calc(100% - 2rem);
+}
+
+#shopSale img {
+    width: calc(100% - 3rem); 
+}
+
+#shop + aside h2 {
+    margin-left: 2rem;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#shop, #shop + aside {
+    margin-bottom: 10rem;
+}
+
+#shop + aside h2:not(:first-child), #shopSale h2 {
+    margin-top: 5rem;
+}
+
+#shop + aside h2, #shopSale h2 {
+    margin-bottom: 2rem;
+}
+
+#shop + aside ul, #shop + aside form {
+    margin-top: 1rem;    
+}
+
+#shop + aside li {
+    padding: 0.5rem 0 0.5rem 0;
+    text-transform: uppercase;
+}
+
+#shop + aside li:hover {
+    color: #111;
+    cursor: pointer;
+}
+
+#shop + aside article {
+    padding: 1rem;
+}
+
+#shop + aside h2::before {
+    content: " ";
+    white-space: pre;
+    background-color: #c0392b;
+    font-size: 1rem;
+    padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+    position: absolute;
+    left: -2rem;
+    top: 0.5rem;
+}
+
+#shop + aside {
+    width: 25%;
+    padding: 7rem 1rem 1rem 1rem;
+    float: left;
+}
+
+#shopSale article {
+    margin-top: 2rem;
+}
+
+#shop {
+    width: calc(75% - 10rem);
+    float: right;
+    margin-right: 10rem;
+    position: relative;
+}
+
+#shop h1 {
+    margin-bottom: 3rem;
+}
+#shop #products {
+    margin-top: 10rem;
+}
+
+#shop .resultAmount {
+    position: absolute;
+    right: 4.2rem;
+}
+
+#shop .thumbnail {
+    position: relative;
+    height: 11.8rem;
+}
+
+#shop article img {
+    position: absolute;
+}
+
+#shop h1 + p, #shop p + ul, #shop .resultAmount {
+    display: inline-block;
+}
+
+#shop h1 + p {
+    padding: 1rem 10rem 1rem 2rem;
+    cursor: pointer;
+    position: absolute;
+    left: 1rem;
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+#shop h1 + p::after {
+    transform: rotate(180deg);
+    position: absolute;
+    content: "^";
+    top: 0.3rem;
+    right: 2rem;
+    font-size: 2rem;
+}
+
+#shop p + ul {
+    position: absolute;
+    left: 1rem;
+    top: 14rem;
+    display: none;
+    background-color: #ddd;
+    font-weight: bold;
+    z-index: 1;
+    color: rgba(17, 17, 17, 0.5);
+}
+
+#shop p + ul li {
+    padding: 0.5rem 10.2rem 0.5rem 2rem;
+}
+
+#shop p + ul li:first-of-type {
+    margin-top: 0.5rem;
+}
+
+#shop h1 + p:hover + ul, #shop p + ul:hover {
+    display: block;
+    cursor: pointer;
+}
+
+#shop p + ul li:hover {
+    color: #ddd;
+    background-color: #999;
+}
+
+#shop ul:not(:first-of-type) {
+    text-align: center;
+}
+
+#shop ul:not(:first-of-type) li {
+    display: inline-block;
+    margin-top: 5rem;
+}
+
+#shop li button {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-bottom: 5rem;
+    background-color: #C0392B;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#shop ul:not(:first-of-type) li:not(:first-child) {
+    margin-left: 1rem;
+}
+
+#shop + aside form:first-of-type {
+    display: block;
+    position: relative;
+}
+
+#shop + aside form:first-of-type button {
+    position: absolute;
+    top: 0;
+    left: 13rem;
+}
+
+#shop + aside form:first-of-type input {
+    width: 50%;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    border: 2px solid #ddd;
+}
+
+#shop + aside button[type="submit"]:first-of-type {
+    padding: 0.75rem 2rem;
+    background-color: #C0392B;
+    color: #fff;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    margin-left: 2rem;
+}
+
+#shop + aside form:last-of-type {
+    display: block;
+    position: relative;
+}
+
+#shop + aside form:last-of-type button {
+    position: absolute;
+    top: 0;
+    left: 13rem;
+}
+
+#shop + aside form:last-of-type input {
+    width: 25%;
+    font-size: 1.5rem;
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 2px solid #ddd;
+}
+
+#shop + aside form[action="#filter"] button[type="submit"] {
+    padding: 0.50rem 1rem;
+    background-color: #C0392B;
+    color: #fff;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+    margin-left: 3rem;
+}
+
+#shop + aside form::after, #shop + aside li:last-of-type::after {
+    content: "";
+    display: block;
+    border: 1px solid #888;
+    opacity: 0.2;
+    margin: 5rem 0 0 0;
+}
+
+#shopSale article:hover {
+    border: 1px solid #888;
+}
+
+#shopSale article:hover .thumbnail::after {
+    content: "ADD TO CART";
+    color: #fff;
+    position: absolute;
+    font-size: 1.3rem;
+    top: 10.3rem;
+    width: 87.5%;
+    padding: 1rem 1rem 1rem 7rem;
+    background: rgba(17, 17, 17, 0.7) url("/images/cart.png") no-repeat;
+    background-position: 4rem 0.7rem;
+    background-size: 10%;
+    display: block;
+}
